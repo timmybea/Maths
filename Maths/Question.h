@@ -20,7 +20,6 @@
 
 -(id)init;
 -(int)ranValue;
--(void)generateQuestion;
 - (NSInteger)answer;
 -(NSInteger)answerTime;
 

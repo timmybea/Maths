@@ -18,15 +18,20 @@
     return self;
 }
 
+-(int)divRanValue {
+    int lowerBound = 1;
+    int upperBound = 10;
+    int rndValue = lowerBound + arc4random() % (upperBound - lowerBound);
+    return rndValue;
+}
+
 
 -(void)generateQuestion {
-    if(super.a > super.b) {
-        super.question = [NSString stringWithFormat:@"%ld / %ld = ", super.a, super.b ];
-        super.answer = super.a / super.b;
-    } else {
-        super.question = [NSString stringWithFormat:@"%ld / %ld = ", super.b, super.a];
-        super.answer = super.b / super.a;
-    }
+    
+    super.b = [self divRanValue];
+    super.a = super.b * [self divRanValue];
+    super.answer = super.a / super.b;    
+    super.question = [NSString stringWithFormat:@"%ld / %ld = ", super.a, super.b ];
     NSLog(@"%@", super.question);
 }
 

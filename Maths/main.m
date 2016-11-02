@@ -28,8 +28,8 @@ int main(int argc, const char * argv[]) {
         
         while(gameOn == YES) {
             
-            DivisionQuestion *equation = [[DivisionQuestion alloc] init];
-            [questionManager addEquationToMutArray:equation];
+            Question *randomQuestion = [questionFactory questionSelector];
+            [questionManager addEquationToMutArray:randomQuestion];
             
             NSString *userInput = [inputHandler returnUserString];
             
@@ -39,7 +39,7 @@ int main(int argc, const char * argv[]) {
             } else {
                 k = userInput.intValue;
                 
-                if (k == [equation answer]) {
+                if (k == [randomQuestion answer]) {
                     NSLog(@"That's Correct! You clever thing!");
                     
                     score.correct += 1;

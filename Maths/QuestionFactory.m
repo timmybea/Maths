@@ -17,9 +17,9 @@
 
 @implementation QuestionFactory
 
--(int)ranValue {
+-(int)selectorRanValue {
     int lowerBound = 0;
-    int upperBound = 3;
+    int upperBound = 4;
     int rndValue = lowerBound + arc4random() % (upperBound - lowerBound);
     return rndValue;
 }
@@ -34,7 +34,7 @@
 
 -(Question*)questionSelector {
 
-    NSString *qType = [self.questionType objectAtIndex:[self ranValue]];
+    NSString *qType = [self.questionType objectAtIndex:[self selectorRanValue]];
     
     return [[NSClassFromString(qType) alloc] init];
 }

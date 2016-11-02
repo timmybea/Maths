@@ -10,4 +10,6 @@
 
 @interface QuestionFactory : Question
 
+-(Question*)questionSelector;
+
 @end
