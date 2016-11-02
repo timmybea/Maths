@@ -13,8 +13,6 @@
 @property int correct;
 @property int wrong;
 
--(id)init;
 -(void)getScore;
-
 
 @end

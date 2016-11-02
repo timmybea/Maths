@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B00810EB1DCA6AFD00FDD003 /* QuestionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B00810EA1DCA6AFD00FDD003 /* QuestionManager.m */; };
 		B0D907D61DC924E000464DBB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D907D51DC924E000464DBB /* main.m */; };
-		B0D907DE1DC9328300464DBB /* AdditionQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D907DD1DC9328300464DBB /* AdditionQuestion.m */; };
+		B0D907DE1DC9328300464DBB /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D907DD1DC9328300464DBB /* Question.m */; };
 		B0D907E11DC93DCB00464DBB /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D907E01DC93DCB00464DBB /* InputHandler.m */; };
 		B0D907E41DC93FDE00464DBB /* ScoreKeeper.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D907E31DC93FDE00464DBB /* ScoreKeeper.m */; };
 /* End PBXBuildFile section */
@@ -26,10 +27,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B00810E91DCA6AFD00FDD003 /* QuestionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionManager.h; sourceTree = "<group>"; };
+		B00810EA1DCA6AFD00FDD003 /* QuestionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionManager.m; sourceTree = "<group>"; };
 		B0D907D21DC924E000464DBB /* Maths */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Maths; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0D907D51DC924E000464DBB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B0D907DC1DC9328300464DBB /* AdditionQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdditionQuestion.h; sourceTree = "<group>"; };
-		B0D907DD1DC9328300464DBB /* AdditionQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdditionQuestion.m; sourceTree = "<group>"; };
+		B0D907DC1DC9328300464DBB /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
+		B0D907DD1DC9328300464DBB /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
 		B0D907DF1DC93DCB00464DBB /* InputHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputHandler.h; sourceTree = "<group>"; };
 		B0D907E01DC93DCB00464DBB /* InputHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputHandler.m; sourceTree = "<group>"; };
 		B0D907E21DC93FDE00464DBB /* ScoreKeeper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreKeeper.h; sourceTree = "<group>"; };
@@ -66,12 +69,14 @@
 		B0D907D41DC924E000464DBB /* Maths */ = {
 			isa = PBXGroup;
 			children = (
+				B00810E91DCA6AFD00FDD003 /* QuestionManager.h */,
+				B00810EA1DCA6AFD00FDD003 /* QuestionManager.m */,
 				B0D907E21DC93FDE00464DBB /* ScoreKeeper.h */,
 				B0D907E31DC93FDE00464DBB /* ScoreKeeper.m */,
 				B0D907DF1DC93DCB00464DBB /* InputHandler.h */,
 				B0D907E01DC93DCB00464DBB /* InputHandler.m */,
-				B0D907DC1DC9328300464DBB /* AdditionQuestion.h */,
-				B0D907DD1DC9328300464DBB /* AdditionQuestion.m */,
+				B0D907DC1DC9328300464DBB /* Question.h */,
+				B0D907DD1DC9328300464DBB /* Question.m */,
 				B0D907D51DC924E000464DBB /* main.m */,
 			);
 			path = Maths;
@@ -134,10 +139,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B00810EB1DCA6AFD00FDD003 /* QuestionManager.m in Sources */,
 				B0D907E41DC93FDE00464DBB /* ScoreKeeper.m in Sources */,
 				B0D907D61DC924E000464DBB /* main.m in Sources */,
 				B0D907E11DC93DCB00464DBB /* InputHandler.m in Sources */,
-				B0D907DE1DC9328300464DBB /* AdditionQuestion.m in Sources */,
+				B0D907DE1DC9328300464DBB /* Question.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +270,7 @@
 				B0D907DB1DC924E000464DBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
