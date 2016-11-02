@@ -11,6 +11,8 @@
 #import "InputHandler.h"
 #import "ScoreKeeper.h"
 #import "QuestionManager.h"
+#import "DivisionQuestion.h"
+#import "QuestionFactory.h"
 
 
 int main(int argc, const char * argv[]) {
@@ -19,13 +21,14 @@ int main(int argc, const char * argv[]) {
         NSLog(@"MAAAAATHS!!!");
         BOOL gameOn = YES;
         
+        QuestionFactory *questionFactory = [[QuestionFactory alloc] init];
         QuestionManager *questionManager = [[QuestionManager alloc] init];
         ScoreKeeper *score = [[ScoreKeeper alloc] init];
         InputHandler *inputHandler = [[InputHandler alloc] init];
         
         while(gameOn == YES) {
             
-            Question *equation = [[Question alloc] init];
+            DivisionQuestion *equation = [[DivisionQuestion alloc] init];
             [questionManager addEquationToMutArray:equation];
             
             NSString *userInput = [inputHandler returnUserString];

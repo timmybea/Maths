@@ -23,9 +23,6 @@
         _startTime = [NSDate date];
         _a = [self ranValue];
         _b = [self ranValue];
-        _answer = self.a + self.b;
-        _question = [NSString stringWithFormat: @"%ld + %ld = ", _a, _b];
-        NSLog(@"%@", _question);
     }
     return self;
 }
