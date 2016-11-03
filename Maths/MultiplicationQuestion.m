@@ -18,9 +18,16 @@
     return self;
 }
 
+-(int)multRanValue {
+    int lowerBound = 1;
+    int upperBound = 12;
+    int rndValue = lowerBound + arc4random() % (upperBound - lowerBound);
+    return rndValue;
+}
 
 -(void)generateQuestion {
-    
+    super.a = [self multRanValue];
+    super.b = [self multRanValue];
     super.question = [NSString stringWithFormat:@"%ld * %ld = ", super.a, super.b ];
     super.answer = super.a * super.b;
     NSLog(@"%@", super.question);
