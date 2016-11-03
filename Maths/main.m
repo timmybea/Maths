@@ -19,6 +19,7 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
         NSLog(@"MAAAAATHS!!!");
+        NSLog(@"To quit press: q");
         BOOL gameOn = YES;
         
         QuestionFactory *questionFactory = [[QuestionFactory alloc] init];
